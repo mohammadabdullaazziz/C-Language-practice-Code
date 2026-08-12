@@ -511,6 +511,27 @@ int main() {
 
 
 --------------- profesonal --------------
+
+
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    bool isMarried;
+    int input;
+
+    printf("Are you married? (1 for Yes, 0 for No): ");
+    scanf("%d", &input);
+    isMarried = input; // 1 হলে true, 0 হলে false
+    while (getchar() != '\n'); // ইনপুট বাফার পরিষ্কার করা
+
+    // Output
+    printf("Married Status: %s\n", isMarried ? "Yes" : "No");
+
+    return 0;
+}
+
+
 #include <stdio.h>
 #include <string.h>
 
